@@ -1,0 +1,111 @@
+/* Global styles for the root element */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links styles */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Button styles */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Light Mode Styles */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Form Datas styles */
+.form-datas button {
+  background-color: #f44336; /* Red color for CANCEL */
+  color: #fff;
+  margin-right: 10px;
+}
+
+.form-datas button.add-contact {
+  background-color: #4caf50; /* Green color for ADD Contact */
+}
+
+/* Table Datas styles */
+.TableDatas button {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.TableDatas button.view {
+  background-color: #fff; /* White color for View */
+  color: #000;
+}
+
+.TableDatas button.update {
+  background-color: #4caf50; /* Green color for Update */
+  color: #fff;
+}
+
+.TableDatas button.delete {
+  background-color: #d32f2f; /* Red color for Delete */
+  color: #fff;
+}
